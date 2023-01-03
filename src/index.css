@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+	display: table;
+    width: 100%;
+	height: 100%;
+	background-image: url('./weather.jpg');
+	background-size: cover;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #fff;
+}
+p.loading-weather {
+    font-size: 32px;
+}
+.temp-celsius {
+    border-right: 1px solid #fff;
+}
+.weather-temp span, .weather-desc span.desc {
+    padding: 5px 15px;
+}
+.weather-temp-desc {
+    display: flex;
+}
+.weather-temp-desc, .weather-subdata, .geolocation-data {
+	padding: 45px;
+	background-color: #1e191991;
+}
+.weather-temp-desc .weather-temp-data {
+    margin-right: 25px;
+}
+.weather-temp-desc .weather-temp {
+    margin-bottom: 42px;
+	font-weight: bold;
+    font-size: 30px;
+}
+.caption {
+    font-size: 14px;
+}
+.desk-data .geolocation-data {
+	display: table;
+	margin-left: 20px;
+}
+.desk-data .weather-temp-desc {
+    margin-bottom: 20px;
+}
+.desk-data {
+    display: flex;
+    justify-content: center;
+}
+.mob-data .weather-temp-desc {
+	justify-content: center;
+}
+.mob-data > div {
+    margin-bottom: 20px;
+}
+.mob-data .weather-data {
+    margin-top: 60px;
+}
+.mob-data {
+    width: 75%;
+    margin: auto;
+}
+.mob-data .weather-subdata > div {
+    display: flex;
+    justify-content: center;
+}
+.mob-data .weather-subdata img, .mob-data .weather-subdata section {
+	padding: 30px;
+}
+@media (min-width: 1128px) {
+	.weather-subdata, .geolocation-data {
+	    display: flex;
+	}
+	.weather-subdata {
+	    justify-content: space-between;
+	}
+	.geo-section {
+		display: table-cell;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-weight: bold;
+	    font-size: 25px;
+	}
+}
+@media (max-width: 600px) {
+	.weather-temp-desc .weather-temp {
+	    font-size: 20px !important;
+	}
+	.weather-temp-desc img {
+	    width: 30%;
+	}
+	p.loading-weather {
+	    font-size: 22px;
+	}
+}
+@media (max-width: 460px) {
+	.weather-temp-desc, .weather-subdata, .geolocation-data {
+	    padding: 45px 5px !important;
+	}
 }

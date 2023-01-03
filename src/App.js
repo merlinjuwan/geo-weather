@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import LoadingPage from './Container/LoadingPage.js';
+import GeoWeather from './Container/GeoWeather.js';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [ready, setReady] = useState(false);
+
+    const GoPage = () => {
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                setReady(true);
+            }, 1000);
+        });
+    }
+
+    return (
+    <>
+        <div className="App">
+            <GoPage />
+            {ready ? <GeoWeather /> : <LoadingPage />}
+        </div>
+    </>
+    );
 }
 
 export default App;
