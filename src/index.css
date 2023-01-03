@@ -95,6 +95,9 @@ p.loading-weather {
 	p.loading-weather {
 	    font-size: 22px;
 	}
+	.weather-temp span {
+		padding: 5px 10px;
+	}
 }
 @media (max-width: 460px) {
 	.weather-temp-desc, .weather-subdata, .geolocation-data {
