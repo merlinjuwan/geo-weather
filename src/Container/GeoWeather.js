@@ -7,13 +7,13 @@ function GeoWeather() {
 	const [city, setCity] = useState('');
 	
 	const Geo = () => {
-		fetch('http://ip-api.com/json')
+		fetch('https://ipapi.co/json')
 		.then((response) => response.json())
 		.then((responseData => {
 			if(responseData.country || responseData.regionName || responseData.city) {
-				setCountry(responseData.country);
+				setCountry(responseData.country_name);
 				setCity(responseData.city);
-				setRegion(responseData.regionName);
+				setRegion(responseData.region);
 			}
 		}));
 		return (
