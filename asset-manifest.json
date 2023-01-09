@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/geo-weather/static/css/main.490e5b25.css",
-    "main.js": "/geo-weather/static/js/main.26cfba2d.js",
+    "main.js": "/geo-weather/static/js/main.131a0ca8.js",
     "static/media/logo.png": "/geo-weather/static/media/logo.8ba2d20b866ce9ab07c0.png",
     "static/media/weather.jpg": "/geo-weather/static/media/weather.49a2ce800fd9c6a97511.jpg",
     "index.html": "/geo-weather/index.html",
     "main.490e5b25.css.map": "/geo-weather/static/css/main.490e5b25.css.map",
-    "main.26cfba2d.js.map": "/geo-weather/static/js/main.26cfba2d.js.map"
+    "main.131a0ca8.js.map": "/geo-weather/static/js/main.131a0ca8.js.map"
   },
   "entrypoints": [
     "static/css/main.490e5b25.css",
-    "static/js/main.26cfba2d.js"
+    "static/js/main.131a0ca8.js"
   ]
 }
