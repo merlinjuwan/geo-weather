@@ -3,7 +3,7 @@ import logo from '../logo.png';
 function LoadLogo() {
 
 	const loadStyle = {
-		backgroundColor: "#03266c",
+		backgroundColor: "rgb(68 112 201)",
 		minHeight: "100vh",
 		display: "flex",
 		flexDirection: "column",
